@@ -1,25 +1,2 @@
-<<<<<<< HEAD
-*.gem
-*.rbc
-.bundle
-.config
-.yardoc
-Gemfile.lock
-InstalledFiles
-_yardoc
-coverage
-doc/
-lib/bundler/man
-pkg
-rdoc
-spec/reports
-test/tmp
-test/version_tmp
-tmp
-.sass-cache
-.code-highlighter-cache
-test-site
-.DS_Store
-=======
 site
->>>>>>> improved starting point
+source/stylesheets/.sass-cache
