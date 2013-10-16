@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://appliedcode.github.io/atom.xml" rel="self"/>
   <link href="http://appliedcode.github.io/"/>
-  <updated>2013-10-17T02:56:18+05:30</updated>
+  <updated>2013-10-17T03:00:04+05:30</updated>
   <id>http://appliedcode.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git Ignore file permissions]]></title>
+    <link href="http://appliedcode.github.io/blog/2013/07/29/git-ignore-file-permissions/"/>
+    <updated>2013-07-29T16:01:00+05:30</updated>
+    <id>http://appliedcode.github.io/blog/2013/07/29/git-ignore-file-permissions</id>
+    <content type="html"><![CDATA[<p>If you use git a lot (like me) and very often have to share git repo/directory between machines. Here is how you can make git not to consider file-permission changes as modifications (shown in your <code>git status</code>).</p>
+
+<ul>
+<li>Got to repo and execute:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config core.filemode false</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>To make it permanent &amp; add to your global config:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global core.filemode false</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Event Report:- February 2nd 2012:- Openstack talks at Manipal University]]></title>
+    <link href="http://appliedcode.github.io/2013/02/event-report-february-2nd-2012.html"/>
+    <updated>2013-02-04T18:40:00+05:30</updated>
+    <id>http://appliedcode.github.io/2013/02/event-report-february-2nd-2012</id>
+    <content type="html"><![CDATA[<p>On February 2, 2013, first in the series of <a href="http://openstack.org/">Openstack</a> talks was organized at <a href="http://www.manipal.edu/Institutions/Engineering/MIT/Pages/Welcome.aspx">Manipal Institute of Technology</a>. It was attended by around 40 students &amp; faculty from BE &amp; M-Tech courses.</p>
+
+<p>  <img src="http://3.bp.blogspot.com/-5qkvCDurONE/UQ-yTyx-4nI/AAAAAAAAAkc/IDxBp8j8OOI/s640/DSC_0048+-+Copy.JPG" alt="" /></p>
+
+<p>The event was started with general introductory session with few minutes on establishing the goals of talk.</p>
+
+<p>Rahul Krishna Upadhyaya ( <a href="https://twitter.com/RahulKrishnaUp">@RahulKrishnaUp</a>) gave an presentation on Virtualization, Cloud, &amp; Introduction to Openstack,</p>
+
+<p>  <img src="http://1.bp.blogspot.com/-4nEmKJELZ-8/UQ-yk9ve6zI/AAAAAAAAAkk/s0uo00E_eSg/s640/DSC_0014+-+Copy.JPG" alt="" /></p>
+
+<p>Mohit Sethi ( <a href="http://twitter.com/mohitsethi">@mohitsethi</a>) explained how to contribute to Openstack. Also gave a presentation of conceptual foundation of DevOpos along with how to  use  <a href="http://www.opscode.com/chef/">Chef</a>  for deployment and development of Openstack with a live demo.</p>
+
+<p>  <img src="http://2.bp.blogspot.com/-rLAGTlRdGa0/USPrkilWkYI/AAAAAAAACZY/ME1WqZEJcY4/s640/DSC_0038.JPG" alt="" /></p>
+
+<p>Thanks to management of Manipal Institute of Technology,Manipal University for hosting the talks.</p>
+
+<p>Special mention of thanks to Dr. Manohara Pai M. M. (Associate Director-Innovation Center, Manipal University) and Dr. Preetham Kumar (Head - Department of Information &amp; Communication Technology) for all the support.</p>
+
+<p>Complete photo-set of the event are available <a href="http://goo.gl/2tGGI">http://goo.gl/2tGGI</a>,</p>
+]]></content>
+  </entry>
   
 </feed>
