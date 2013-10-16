@@ -4,7 +4,8 @@ title: "test"
 date: 2013-10-17 03:36
 comments: true
 categories: 
-author: Mohit Sethi(http://twitter.com/mohitsethi)
+author: Mohit Sethi
+author_site: http://twitter.com/mohitsethi
 ---
 
 Test -Post
