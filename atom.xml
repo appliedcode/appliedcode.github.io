@@ -4,7 +4,7 @@
   <title><![CDATA[AppliedCode]]></title>
   <link href="http://appliedcode.github.io/atom.xml" rel="self"/>
   <link href="http://appliedcode.github.io/"/>
-  <updated>2013-10-17T03:23:50+05:30</updated>
+  <updated>2013-10-17T03:38:32+05:30</updated>
   <id>http://appliedcode.github.io/</id>
   <author>
     <name><![CDATA[appliedcode]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[test]]></title>
+    <link href="http://appliedcode.github.io/blog/2013/10/17/test/"/>
+    <updated>2013-10-17T03:36:00+05:30</updated>
+    <id>http://appliedcode.github.io/blog/2013/10/17/test</id>
+    <content type="html"><![CDATA[<p>Test -Post</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
