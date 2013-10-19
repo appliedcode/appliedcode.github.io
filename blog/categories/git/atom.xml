@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | AppliedCode]]></title>
+  <link href="http://appliedcode.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://appliedcode.github.io/"/>
+  <updated>2013-10-19T22:47:56+05:30</updated>
+  <id>http://appliedcode.github.io/</id>
+  <author>
+    <name><![CDATA[Mohit Sethi]]></name>
+    <email><![CDATA[appliedcode@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Git Ignore file permissions]]></title>
+    <link href="http://appliedcode.github.io/blog/2013/07/29/git-ignore-file-permissions/"/>
+    <updated>2013-07-29T16:01:00+05:30</updated>
+    <id>http://appliedcode.github.io/blog/2013/07/29/git-ignore-file-permissions</id>
+    <content type="html"><![CDATA[<p>If you use git a lot (like me) and very often have to share git repo/directory between machines. Here is how you can make git not to consider file-permission changes as modifications (shown in your <code>git status</code>).</p>
+
+<ul>
+<li><p>Got to repo and execute:
+<code>
+git config core.filemode false
+</code></p></li>
+<li><p>To make it permanent &amp; add to your global config:
+<code>
+git config --global core.filemode false
+</code></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
