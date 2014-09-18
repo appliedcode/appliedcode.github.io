@@ -4,7 +4,7 @@
   <title><![CDATA[AppliedCode]]></title>
   <link href="http://appliedcode.github.io/atom.xml" rel="self"/>
   <link href="http://appliedcode.github.io/"/>
-  <updated>2013-10-21T04:21:44+05:30</updated>
+  <updated>2014-09-18T14:53:52+05:30</updated>
   <id>http://appliedcode.github.io/</id>
   <author>
     <name><![CDATA[Mohit Sethi]]></name>
@@ -12,6 +12,98 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a RubyGem]]></title>
+    <link href="http://appliedcode.github.io/blog/2014/02/09/creating-a-rubygem/"/>
+    <updated>2014-02-09T22:46:00+05:30</updated>
+    <id>http://appliedcode.github.io/blog/2014/02/09/creating-a-rubygem</id>
+    <content type="html"><![CDATA[<p>In order to create to a gem we need to follow some steps
+Step-1. First of all, create a ruby file say hello.rb in lib folder</p>
+
+<pre><code> code of lib/hello.rb
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> class hello
+</span><span class='line'>      def self.hi # Static method
+</span><span class='line'>           puts "Hello world!"
+</span><span class='line'>      end
+</span><span class='line'> end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Step-2. Next, we need to create a Gem Specification file with name say hello.gemspec</p>
+
+<pre><code> hello.gemspec
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> Gem::Specification.new do |s|
+</span><span class='line'>      s.name             = 'hello'
+</span><span class='line'>      s.version          = '0.0.0'
+</span><span class='line'>      s.date              = '2014-02-08'
+</span><span class='line'>      s.summary       = "Hello!"
+</span><span class='line'>      s.description    = "A simple hello world gem"
+</span><span class='line'>      s.authors         = ["Manish Sethi"]
+</span><span class='line'>      s.email             = 'manish@sethis.in'
+</span><span class='line'>      s.files               = ["lib/hello.rb"]
+</span><span class='line'>      s.homepage    =
+</span><span class='line'>                               'http://rubygems.org/gems/hello'
+</span><span class='line'>      s.license = 'MIT'
+</span><span class='line'> end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Step-3. Next, we need to build the specification</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> $ gem build hello.spec</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code> This will create a gem file named hello-0.0.0.gem
+ Now, we need to install this gem so that it is added to the library of the gem so that we can use this later in                some other programs.
+
+ Command to install gem:
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>      $ gem install hello.0.0.0.gem</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>Verify installation using the command:
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem list hello</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Step-4. Next, to use this hello gem, create a file named test.rb</p>
+
+<pre><code>  Use this code
+     require 'Rubygems'
+     require 'hello'
+     hello.hi
+ # output: Hello World!
+</code></pre>
+
+<p> In the way, we had created gem and used in the ruby program to show the result.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Git Ignore file permissions]]></title>
