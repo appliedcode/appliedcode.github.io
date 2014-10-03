@@ -1,7 +1,0 @@
----
-layout: post
-title: "Docker"
-date: 2013-12-24 22:55
-comments: true
-categories: 
----
