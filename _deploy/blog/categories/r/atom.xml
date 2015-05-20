@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: R, | AppliedCode]]></title>
+  <link href="http://appliedcode.github.io/blog/categories/r/atom.xml" rel="self"/>
+  <link href="http://appliedcode.github.io/"/>
+  <updated>2015-05-20T18:54:26+05:30</updated>
+  <id>http://appliedcode.github.io/</id>
+  <author>
+    <name><![CDATA[Mohit Sethi]]></name>
+    <email><![CDATA[appliedcode@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Installing R on MacOSX Yosemite]]></title>
+    <link href="http://appliedcode.github.io/blog/2015/05/20/installing-r-on-macosx-yosemite/"/>
+    <updated>2015-05-20T18:45:00+05:30</updated>
+    <id>http://appliedcode.github.io/blog/2015/05/20/installing-r-on-macosx-yosemite</id>
+    <content type="html"><![CDATA[<p>Here is how you can install <a href="http://en.wikipedia.org/wiki/R_%28programming_language%29">Programming Language R</a> on MacOSX Yosemite</p>
+
+<p>Step 1: You need <a href="http://brew.sh/">HomeBrew</a>, its pretty easy, please visit <a href="http://brew.sh/">http://brew.sh/</a> for instruction to install <a href="http://brew.sh/">HomeBrew</a>.</p>
+
+<p>Step 2: Open Terminal, execute the following,</p>
+
+<pre><code>      brew tap homebrew/science
+      brew install gcc
+      brew install r
+</code></pre>
+
+<p>The gcc package is the homebrew/science tap already contains the latest fortran compiler(gfortran), and most of all: the whole package is precompiled so it saves you a lot of compilation time.</p>
+
+<p><a href="https://twitter.com/mohitsethi">Mohit</a></p>
+]]></content>
+  </entry>
+  
+</feed>

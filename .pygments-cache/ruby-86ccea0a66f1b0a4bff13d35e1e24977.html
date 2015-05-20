@@ -1,0 +1,20 @@
+<div class="highlight"><pre><span class="no">Vagrant</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+  <span class="c1"># ... other stuff</span>
+
+  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provider</span> <span class="ss">:hp</span> <span class="k">do</span> <span class="o">|</span><span class="n">rs</span><span class="o">|</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">access_key</span>  <span class="o">=</span> <span class="s2">&quot;&lt;hp_access_key&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="s2">&quot;&lt;hp_secret_key&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">flavor</span>   <span class="o">=</span> <span class="s2">&quot;standard.xsmall&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">tenant_id</span> <span class="o">=</span> <span class="s2">&quot;&lt;hp_tenant_id&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">server_name</span> <span class="o">=</span> <span class="s2">&quot;&lt;server_name&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">image</span>    <span class="o">=</span> <span class="s2">&quot;Ubuntu Precise 12.04 LTS Server 64-bit 20121026 (b)&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">keypair_name</span> <span class="o">=</span> <span class="s2">&quot;&lt;your_key_pair_name_on_hpcloud&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">ssh_private_key_path</span> <span class="o">=</span> <span class="s2">&quot;&lt;private_key_location&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">ssh_username</span> <span class="o">=</span> <span class="s2">&quot;&lt;ssh_username&gt;&quot;</span>
+    <span class="n">rs</span><span class="o">.</span><span class="n">availability_zone</span> <span class="o">=</span> <span class="s2">&quot;az1&quot;</span>
+    <span class="c1"># Security Groups defaults to [&quot;default&quot;]</span>
+    <span class="c1"># rs.security_groups = [&quot;group1&quot;, &quot;group2&quot;]</span>
+  <span class="k">end</span>
+
+<span class="k">end</span>
+</pre></div>
