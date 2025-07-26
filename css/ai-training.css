@@ -1,0 +1,362 @@
+/* ===================================================================
+ * AI Training Specific Styles
+ * ------------------------------------------------------------------- */
+
+/* Course Details */
+.course-details {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.course-duration,
+.course-level {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: fit-content;
+}
+
+.course-level {
+    background: linear-gradient(135deg, #39b54a 0%, #2d8a3c 100%);
+    color: white;
+    border: 1px solid #39b54a;
+}
+
+/* Home Content Buttons */
+.home-content__buttons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-content__buttons .btn {
+    min-width: 18rem;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.btn--stroke {
+    background: transparent;
+    border: 3px solid #39b54a;
+    color: #39b54a;
+    transition: all 0.3s ease;
+}
+
+.btn--stroke:hover {
+    background: #39b54a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(57, 181, 74, 0.3);
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, #39b54a 0%, #2d8a3c 100%);
+    border: 3px solid #39b54a;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(57, 181, 74, 0.4);
+    background: linear-gradient(135deg, #2d8a3c 0%, #1f5f29 100%);
+}
+
+/* Enhanced Service Icons for AI Topics */
+.service-icon--ai-fundamentals {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.service-icon--ml-advanced {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.service-icon--agentic-ai {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.service-icon--nlp {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.service-icon--computer-vision {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.service-icon--ai-ethics {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 3rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Training Section Enhancements */
+.s-works .h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 3rem;
+}
+
+/* Testimonials Enhancement */
+.s-testimonials {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 12rem 0;
+}
+
+.testimonials__avatar {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 2rem;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials__slide {
+    text-align: center;
+    padding: 3rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+}
+
+.testimonials__slide p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.testimonials__author {
+    font-weight: 600;
+    color: #333;
+}
+
+.testimonials__author span {
+    display: block;
+    font-weight: 400;
+    color: #39b54a;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+/* Stats Section Enhancement */
+.s-stats {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.stats__count {
+    font-size: 7rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats__col h5 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* Service Items Enhancement */
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* Training Portfolio Items */
+.item-folio {
+    transition: transform 0.3s ease;
+}
+
+.item-folio:hover {
+    transform: translateY(-5px);
+}
+
+.item-folio__thumb {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.item-folio__text {
+    padding: 2rem 0;
+}
+
+.item-folio__title {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-folio__cat {
+    color: #39b54a;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* Contact Section */
+.contact-email {
+    font-size: 2.5rem;
+    color: #39b54a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-email:hover {
+    color: #2d8a3c;
+}
+
+.contact-number {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home-content__buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .home-content__buttons .btn {
+        min-width: 100%;
+        font-size: 1.2rem;
+        padding: 1.2rem 2rem;
+    }
+    
+    .course-details {
+        align-items: flex-start;
+    }
+    
+    .video-container {
+        padding-bottom: 75%; /* Adjust for mobile */
+        margin: 2rem 0;
+    }
+    
+    .stats__count {
+        font-size: 5rem;
+    }
+    
+    .testimonials__slide {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    
+    .testimonials__slide p {
+        font-size: 1.4rem;
+    }
+    
+    .contact-number {
+        display: block;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-content__buttons .btn {
+        font-size: 1.1rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    .stats__count {
+        font-size: 4rem;
+    }
+    
+    .service-item {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-item,
+.item-folio,
+.testimonials__slide {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Custom scrollbar for modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #39b54a 0%, #2d8a3c 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2d8a3c 0%, #1f5f29 100%);
+}

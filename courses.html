@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Courses Catalog - AI Training Hub</title>
+    <meta name="description" content="Comprehensive AI and Agentic AI courses catalog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ai-training.css">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .catalog-container {
+            max-width: 1200px;
+            margin: 8rem auto;
+            padding: 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+        
+        .page-header h1 {
+            color: #333;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+        
+        .course-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .course-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .course-title {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .course-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .course-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .meta-item {
+            padding: 0.5rem 1rem;
+            background: #f8f9fa;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        
+        .course-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #39b54a;
+            margin-bottom: 2rem;
+        }
+        
+        .course-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 3rem;
+        }
+        
+        .course-features li {
+            padding: 0.5rem 0;
+            color: #555;
+        }
+        
+        .course-features li:before {
+            content: "✓";
+            color: #39b54a;
+            font-weight: 700;
+            margin-right: 1rem;
+        }
+        
+        .enroll-btn {
+            background: linear-gradient(135deg, #39b54a 0%, #2d8a3c 100%);
+            color: white;
+            padding: 1.2rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+        
+        .enroll-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(57, 181, 74, 0.4);
+            background: linear-gradient(135deg, #2d8a3c 0%, #1f5f29 100%);
+        }
+        
+        .level-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .level-beginner {
+            background: #28a745;
+            color: white;
+        }
+        
+        .level-intermediate {
+            background: #ffc107;
+            color: #333;
+        }
+        
+        .level-advanced {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .back-link {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .back-link a {
+            color: #39b54a;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="catalog-container">
+        <div class="page-header">
+            <h1>AI Training Courses</h1>
+            <p>Master AI, Machine Learning, and Agentic AI with our comprehensive training programs</p>
+        </div>
+        
+        <div class="course-grid">
+            <!-- AI Fundamentals -->
+            <div class="course-card">
+                <div class="level-badge level-beginner">Beginner</div>
+                <div class="course-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    🧠
+                </div>
+                <h3 class="course-title">AI Fundamentals</h3>
+                <p class="course-description">
+                    Master the core concepts of Artificial Intelligence, including neural networks, deep learning, and modern AI architectures. Perfect for beginners and professionals transitioning to AI.
+                </p>
+                <div class="course-meta">
+                    <span class="meta-item">8 Weeks</span>
+                    <span class="meta-item">Online</span>
+                    <span class="meta-item">Certificate</span>
+                </div>
+                <div class="course-price">$599</div>
+                <ul class="course-features">
+                    <li>Introduction to AI and Machine Learning</li>
+                    <li>Neural Networks and Deep Learning</li>
+                    <li>Hands-on Projects with Python</li>
+                    <li>Industry Case Studies</li>
+                    <li>Career Guidance and Mentorship</li>
+                </ul>
+                <a href="register.html?course=ai-fundamentals" class="enroll-btn">Enroll Now</a>
+            </div>
+            
+            <!-- Advanced Machine Learning -->
+            <div class="course-card">
+                <div class="level-badge level-intermediate">Intermediate</div>
+                <div class="course-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    ⚙️
+                </div>
+                <h3 class="course-title">Advanced Machine Learning</h3>
+                <p class="course-description">
+                    Deep dive into advanced ML algorithms, ensemble methods, reinforcement learning, and MLOps practices for production deployment.
+                </p>
+                <div class="course-meta">
+                    <span class="meta-item">10 Weeks</span>
+                    <span class="meta-item">Online</span>
+                    <span class="meta-item">Advanced Certificate</span>
+                </div>
+                <div class="course-price">$799</div>
+                <ul class="course-features">
+                    <li>Advanced Algorithms & Optimization</li>
+                    <li>Ensemble Methods & Model Selection</li>
+                    <li>Reinforcement Learning</li>
+                    <li>MLOps and Production Deployment</li>
+                    <li>Capstone Project</li>
+                </ul>
+                <a href="register.html?course=advanced-ml" class="enroll-btn">Enroll Now</a>
+            </div>
+            
+            <!-- Agentic AI Workflows -->
+            <div class="course-card">
+                <div class="level-badge level-advanced">Advanced</div>
+                <div class="course-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    🤖
+                </div>
+                <h3 class="course-title">Agentic AI Workflows</h3>
+                <p class="course-description">
+                    Learn to build autonomous AI agents, multi-agent systems, and agentic workflows using cutting-edge frameworks and tools.
+                </p>
+                <div class="course-meta">
+                    <span class="meta-item">12 Weeks</span>
+                    <span class="meta-item">Online + Lab</span>
+                    <span class="meta-item">Expert Certificate</span>
+                </div>
+                <div class="course-price">$999</div>
+                <ul class="course-features">
+                    <li>Agent Architecture & Design Patterns</li>
+                    <li>Multi-Agent Systems</li>
+                    <li>Tool Integration & API Usage</li>
+                    <li>Workflow Orchestration</li>
+                    <li>Real-world Agent Development</li>
+                </ul>
+                <a href="register.html?course=agentic-ai" class="enroll-btn">Enroll Now</a>
+            </div>
+            
+            <!-- Natural Language Processing -->
+            <div class="course-card">
+                <div class="level-badge level-intermediate">Intermediate</div>
+                <div class="course-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    💬
+                </div>
+                <h3 class="course-title">Natural Language Processing</h3>
+                <p class="course-description">
+                    Comprehensive NLP training covering transformers, LLMs, prompt engineering, and building conversational AI systems.
+                </p>
+                <div class="course-meta">
+                    <span class="meta-item">9 Weeks</span>
+                    <span class="meta-item">Online</span>
+                    <span class="meta-item">Specialist Certificate</span>
+                </div>
+                <div class="course-price">$749</div>
+                <ul class="course-features">
+                    <li>Text Processing & Feature Engineering</li>
+                    <li>Transformer Architecture & LLMs</li>
+                    <li>Prompt Engineering & Fine-tuning</li>
+                    <li>Conversational AI Development</li>
+                    <li>NLP Production Systems</li>
+                </ul>
+                <a href="register.html?course=nlp" class="enroll-btn">Enroll Now</a>
+            </div>
+            
+            <!-- Computer Vision -->
+            <div class="course-card">
+                <div class="level-badge level-intermediate">Intermediate</div>
+                <div class="course-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    👁️
+                </div>
+                <h3 class="course-title">Computer Vision</h3>
+                <p class="course-description">
+                    Master image processing, object detection, image segmentation, and modern computer vision architectures using PyTorch and TensorFlow.
+                </p>
+                <div class="course-meta">
+                    <span class="meta-item">10 Weeks</span>
+                    <span class="meta-item">Online</span>
+                    <span class="meta-item">Specialist Certificate</span>
+                </div>
+                <div class="course-price">$799</div>
+                <ul class="course-features">
+                    <li>Image Processing Fundamentals</li>
+                    <li>Convolutional Neural Networks</li>
+                    <li>Object Detection & Segmentation</li>
+                    <li>Advanced CV Architectures</li>
+                    <li>Computer Vision Applications</li>
+                </ul>
+                <a href="register.html?course=computer-vision" class="enroll-btn">Enroll Now</a>
+            </div>
+            
+            <!-- AI Ethics & Governance -->
+            <div class="course-card">
+                <div class="level-badge level-beginner">All Levels</div>
+                <div class="course-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    🛡️
+                </div>
+                <h3 class="course-title">AI Ethics & Governance</h3>
+                <p class="course-description">
+                    Learn responsible AI development, bias detection and mitigation, AI governance frameworks, and ethical considerations in AI deployment.
+                </p>
+                <div class="course-meta">
+                    <span class="meta-item">6 Weeks</span>
+                    <span class="meta-item">Online</span>
+                    <span class="meta-item">Ethics Certificate</span>
+                </div>
+                <div class="course-price">$449</div>
+                <ul class="course-features">
+                    <li>AI Ethics Principles</li>
+                    <li>Bias Detection & Mitigation</li>
+                    <li>Responsible AI Frameworks</li>
+                    <li>Governance & Compliance</li>
+                    <li>Case Studies & Best Practices</li>
+                </ul>
+                <a href="register.html?course=ai-ethics" class="enroll-btn">Enroll Now</a>
+            </div>
+        </div>
+        
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth animations
+        const cards = document.querySelectorAll('.course-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                card.style.transition = 'all 0.6s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 100);
+        });
+    </script>
+</body>
+</html>
